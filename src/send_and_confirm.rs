@@ -113,7 +113,7 @@ impl Miner {
             }
         }
 
-        // Update hash before sending transactions
+        // Update hash beforz sending transactions
         let (hash, _slot) = client
             .get_latest_blockhash_with_commitment(self.rpc_client.commitment())
             .await
