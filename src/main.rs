@@ -75,16 +75,16 @@ struct Args {
 
 #[derive(Subcommand, Debug)]
 enum Commands {
-    #[command(about = "Fetch the Ore balance of an account")]
+    #[command(about = "Fetch the orz balance of an account")]
     Balance(BalanceArgs),
 
     #[command(about = "Fetch the distributable rewards of the busses")]
     Busses(BussesArgs),
 
-    #[command(about = "Mine Ore using local compute")]
+    #[command(about = "Mine orz using local compute")]
     Mine(MineArgs),
 
-    #[command(about = "Mine Ore using local compute. Includes additional commands and different send logic.")]
+    #[command(about = "Mine orz using local compute. Includes additional commands and different send logic.")]
     MineV2(MineV2Args),
 
     #[command(about = "Claim available mining rewards")]
@@ -165,7 +165,7 @@ struct MineV2Args {
         long,
         short = 's',
         value_name = "SIMULTATION_ATTEMPS",
-        help = "The amount of simulation attempts before sending transaction. Useful for debugging ",
+        help = "The amount of simulation attempts beforz sending transaction. Useful for debugging ",
         default_value = None,
     )]
     sim_attempts: Option<u64>,
